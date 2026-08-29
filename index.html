@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>[ CLASSIFIED ] // ENTER THE KEY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- ============ SCREEN 1: PIN LOCK ============ -->
+      <section id="pin-screen" class="screen active">
+        <div class="eyebrow">restricted access</div>
+        <div class="lock-title">ENTER THE KEY</div>
+        <div class="lock-sub">this door only opens for one person.</div>
+
+        <div class="pin-frame" id="pin-frame">
+          <div class="warning-msg" id="warning-msg">ACCESS DENIED</div>
+          <div class="dots-row" id="dots-row">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="numpad" id="numpad">
+            <div class="npkey" data-k="1">1</div>
+            <div class="npkey" data-k="2">2</div>
+            <div class="npkey" data-k="3">3</div>
+            <div class="npkey" data-k="4">4</div>
+            <div class="npkey" data-k="5">5</div>
+            <div class="npkey" data-k="6">6</div>
+            <div class="npkey" data-k="7">7</div>
+            <div class="npkey" data-k="8">8</div>
+            <div class="npkey" data-k="9">9</div>
+            <div class="npkey" data-k="clear">C</div>
+            <div class="npkey" data-k="0">0</div>
+            <div class="npkey" data-k="back">⌫</div>
+          </div>
+        </div>
+
+        <div class="hint">hint: untuk membuka halaman ini, ketik 040911</div>
+      </section>
+
+      <!-- ============ SCREEN 2: CHAT ============ -->
+      <section id="chat-screen" class="screen">
+        <div class="chat-wrap">
+          <div class="chat-header">
+            <div class="chat-avatar"></div>
+            <div>
+              <div class="chat-name">???</div>
+              <div class="chat-status">● online</div>
+            </div>
+          </div>
+          <div class="chat-body" id="chat-body"></div>
+          <div class="continue-wrap">
+            <button class="btn-continue" id="btn-continue">Click "Next" to Continue</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SCREEN 3: RAIN + LYRICS ============ -->
+      <section id="rain-screen" class="screen">
+        <canvas id="matrix-canvas"></canvas>
+        <div class="rain-title">obsessive mode // do not close</div>
+        <div class="rain-overlay">
+          <div class="lyric-field" id="lyric-field"></div>
+        </div>
+        <div class="rain-exit" id="rain-exit">■ stop</div>
+      </section>
+
+      <!-- ============ SCREEN 4: CLIMAX & ENDING ============ -->
+      <section id="end-screen" class="screen">
+        <div class="ending-line"><span class="ending-text" id="ending-text"></span><span class="type-cursor" id="type-cursor">▮</span></div>
+        <div class="ending-translation" id="ending-translation"></div>
+        <button class="btn-replay" id="btn-replay">Replay Experience</button>
+      </section>
+    </div>
+
+    <div id="glitch-flash"></div>
+
+    <audio id="bg-audio" loop preload="auto"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
