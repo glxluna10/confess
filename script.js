@@ -272,8 +272,8 @@
   const typeCursor = document.getElementById('type-cursor');
   const btnReplay = document.getElementById('btn-replay');
 
-  const ENDING_LINE = 'So, do you still think I don’t love you?';
-  const ENDING_LINE_ID = 'Jadi sekarang, apakah kamu masih berpikir bahwa aku tidak mencintaimu?';
+  const ENDING_LINE = "You're stuck with me now. There's no escape.";
+  const ENDING_LINE_ID = 'Kamu terjebak denganku sekarang. Tidak ada jalan keluar.';
   const endingTranslationEl = document.getElementById('ending-translation');
   let climaxTriggered = false;
 
